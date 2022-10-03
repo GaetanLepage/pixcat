@@ -2,6 +2,7 @@ import os
 from io import BytesIO
 
 import matplotlib
+import matplotlib.figure
 
 from .display import display
 
