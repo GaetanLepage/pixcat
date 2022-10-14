@@ -1,4 +1,6 @@
 import sys
+import numpy as np
+import cv2
 from base64 import standard_b64encode
 
 
@@ -30,3 +32,10 @@ def write_chunked(**cmd) -> None:
 def display(image_bytes: bytes) -> None:
     write_chunked(a='T', f=100, data=image_bytes)
     print()
+
+
+def display_numpy(image_array: np.ndarray) -> None:
+
+    encoded_image: np.ndarray = cv2.imencode('.png', image_array)[1]
+
+    display(image_bytes=encoded_image.tobytes())
