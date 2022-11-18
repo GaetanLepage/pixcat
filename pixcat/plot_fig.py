@@ -1,8 +1,8 @@
 import os
 from io import BytesIO
 
-import matplotlib
-import matplotlib.figure
+import matplotlib  # type: ignore
+import matplotlib.figure  # type: ignore
 
 from .display import display
 

@@ -1,6 +1,6 @@
 import sys
 import numpy as np
-import cv2
+import cv2  # type: ignore
 from base64 import standard_b64encode
 
 
