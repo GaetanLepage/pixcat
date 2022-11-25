@@ -1,0 +1,28 @@
+[project]
+name = "pixcat"
+description = "A python module to display an image in the kitty terminal"
+
+version = "0.4"
+authors = [
+    { name = "Gaétan Lepage", email = "gaetan.lepage@inria.fr" }
+]
+urls = { project = "https://gitlab.inria.fr/galepage/remi" }
+license = { text = "GNU General Public License v3.0" }
+keywords = [ "kitty" ]
+
+classifiers=[
+
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "opencv-python"
+]
+
+[tool.setuptools.package-data]
+pixcat = [ "py.typed" ]
