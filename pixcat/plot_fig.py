@@ -9,7 +9,7 @@ from .display import display
 
 def plot_fig(
     fig: matplotlib.figure.Figure,
-    save_path: str = None
+    save_path: str = ''
 ) -> None:
     """
     Display the given matplotlib figure in a kitty terminal.
