@@ -2,7 +2,7 @@
 name = "pixcat"
 description = "A python module to display an image in the kitty terminal"
 
-version = "0.4"
+version = "0.5"
 authors = [
     { name = "Gaétan Lepage", email = "gaetan.lepage@inria.fr" }
 ]
